@@ -1,3 +1,4 @@
 print "Ingresa tu nombre: "
 name = gets.chomp
-puts "Hola #{name}"
+puts "Hola \"#{name}\""
+#"Hola #{name}"
