@@ -1,6 +1,16 @@
-print "Ingresa tu numero #1: "
-n1 = gets.chomp.to_i
-print "Ingresa tu numero #2: "
-n2 = gets.chomp.to_i
-puts n1 + n2
-#"Hola #{name}"
+puts "Ingrese altura: "
+altura = gets.chomp.to_f
+puts "Ingrese peso: "
+peso = gets.chomp.to_f
+
+bmi = peso / (altura ** 2)
+
+puts "el BMI es #{bmi}"
+
+if bmi < 18.5
+    puts "estas flaco"
+elsif bmi >= 18.5 && bmi <= 25
+    puts "estas bien"
+else
+    puts "sobrepeso"
+end
