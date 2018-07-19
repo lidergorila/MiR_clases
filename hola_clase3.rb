@@ -20,4 +20,14 @@ a.times do |i|
     aux = aux + array[i]
 end
 puts "Suma #{aux} y promedio #{aux/a}"
-
+#Es par o impar
+cant_par = 0
+cant_impar = 0
+a.times do |i|
+    if array[i] % 2 == 0
+        cant_par += 1
+    else 
+        cant_impar += 1
+    end
+end
+puts "Pares #{cant_par} e Impares #{cant_impar}"
