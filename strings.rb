@@ -2,7 +2,7 @@
 #["Hola", "Mundo"].join("--")
 #string.gsub("a_remplazar", "remplazó")
 #a.count #contar palabras o char
-
+puts "Hola"
 str = gets.chomp
 puts "Palabra: " + str.reverse.upcase
 if str.eql?(str.reverse)
