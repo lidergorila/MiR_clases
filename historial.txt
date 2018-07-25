@@ -2,3 +2,8 @@ Nombre: sergio Tiempo de llamada: 1.580047 Fecha: 2018-07-25 01:58:41 -0500
 Nombre: sergio Tiempo de llamada: 8.250515 Fecha: 2018-07-25 01:59:16 -0500
 Nombre: jorge Tiempo de llamada: 12.619848 Fecha: 2018-07-25 02:01:20 -0500
 Nombre: jorge Tiempo de llamada: 5.498762 Fecha: 2018-07-25 02:03:03 -0500
+Nombre: sergio Tiempo de llamada: 14.539781 Fecha: 2018-07-25 02:17:27 -0500
+Nombre: sergio Tiempo de llamada: 8.226493 Fecha: 2018-07-25 02:17:54 -0500
+Nombre: fabian Tiempo de llamada: 4.239856 Fecha: 2018-07-25 02:21:47 -0500
+Nombre: claudia Tiempo de llamada: 4.206736 Fecha: 2018-07-25 02:23:14 -0500
+Nombre: sergio Tiempo de llamada: 4.69972 Fecha: 2018-07-25 02:23:23 -0500

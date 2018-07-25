@@ -1,11 +1,23 @@
 class Telefono
 
+  @@dispositivos = 0
+  @@tiempo_total = 0
+
      def initialize
+      @@dispositivos += 1
         @directorio = {}
         @historial = {}
         @en_llamada
         @call = false
         @start_call
+     end
+
+     def dispositivos
+      @@dispositivos
+     end
+
+     def tiempo_total
+      @@tiempo_total
      end
 
      def importar
@@ -81,6 +93,7 @@ class Telefono
         tiempo = Time.now - @start_call
         File.open("historial.txt", 'a') { |file| file.puts('Nombre: ' + @en_llamada + ' Tiempo de llamada: ' + tiempo.to_s + ' Fecha: ' + Time.now.to_s) }
         @call = false
+        @@tiempo_total = @@tiempo_total + tiempo
         puts "Se colgó la llamada con #{@en_llamada}..."
       else
         puts "Ya está colgado..."
@@ -113,6 +126,7 @@ puts "5. Hacer una llamada"
 puts "6. Mostrar llamada actual"
 puts "7. Colgar llamada"
 puts "8. Historial de llamadas"
+puts "9. Mostrar Datos"
 
 @option = gets.chomp.to_i
 
@@ -125,6 +139,7 @@ while @option != 4 do
     when 1
       #"It's between 1 and 5"
       #break
+      phone = Telefono.new
       puts "Ingrese nombre: "
       nom = gets.chomp
       puts "Ingrese teléfono: "
@@ -153,8 +168,11 @@ while @option != 4 do
       phone.colgar
     when 8
       phone.historial
+    when 9
+      puts "Tiempo total de llamadas: #{phone.tiempo_total}"
+      puts "Dispositivos creados: #{phone.dispositivos}"
     else
-      puts "You gave me #{@option} -- I have no idea what to do with that."
+      puts "Me diste #{@option} -- No tengo ni idea de que hacer con eso."
       #break
   end
 
@@ -166,7 +184,8 @@ while @option != 4 do
   puts "6. Mostrar llamada actual"
   puts "7. Colgar llamada"
   puts "8. Historial de llamadas"
-
+  puts "9. Mostrar Datos"
+  
   @option = gets.chomp.to_i
 
 end
